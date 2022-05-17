@@ -10,9 +10,7 @@ import accountManagement.service.UserServiceImpl;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-//		UserDao userDao = new UserDao(DBConnectionMgr.getInstance());
-		UserService userService = new UserServiceImpl(new UserDao(DBConnectionMgr.getInstance()), sc);
-		
+		UserService userService = new UserServiceImpl(new UserDao(DBConnectionMgr.getInstance() ,sc), sc);
 		
 		while(true) {
 			System.out.println("[유저 회원가입 프로그램]");

@@ -15,5 +15,10 @@ public class UserMst extends User{
 	private String password;
 	private LocalDateTime create_date;
 	private LocalDateTime update_date;
-
+	
+	public void attack() {
+		System.out.println("test");
+		toString();
+	}
+	
 }
